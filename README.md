@@ -8,6 +8,12 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 - Easily categorize posts with tags
 - Fast, optimized web font loading
 
+## Setup
+- Have node, and npm installed
+- Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) `npm i --global yarn`
+- `yarn dev`
+- Open browser to `http://localhost:3000/`
+
 ## Configuration
 
 1. Update your name in `theme.config.js` or change the footer.
@@ -15,20 +21,23 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 1. Update the meta tags in `pages/_document.js`.
 1. Update the posts inside `pages/posts/*.md` with your own content.
 
-## Deploy your own
+## About Next.js Pages
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+In Next.js, a **page** is a [React Component](https://reactjs.org/docs/components-and-props.html) exported from a `.js`, `.jsx`, `.ts`, or `.tsx` file in the `pages` directory. Each page is associated with a route based on its file name.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
+**Example**: If you create `pages/about.js` that exports a React component like below, it will be accessible at `/about`.
 
-## How to use
+```
+function About() {
+  return <div>About</div>
+}
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example blog my-blog
-# or
-yarn create next-app --example blog my-blog
+export default About
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Pages with Dynamic Routes
+
+Next.js supports pages with dynamic routes. For example, if you create a file called `pages/posts/[id].js`, then it will be accessible at `posts/1`, `posts/2`, etc.
+
+> To learn more about dynamic routing, check the [Dynamic Routing documentation](/docs/routing/dynamic-routes.md).
+
