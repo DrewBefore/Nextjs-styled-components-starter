@@ -15,13 +15,13 @@ export const Wrapper = styled.section`
 `;
 
 export const Grid = styled.div`
-    display: grid;
-    grid-template-columns: ${props => `repeat(${props.columns}, 1fr)` };
-    grid-gap: 1rem;
-    margin: 1rem 0;
+  display: grid;
+  grid-template-columns: ${props => `repeat(${props.columns}, 1fr)` };
+  grid-gap: 1rem;
+  margin: 1rem 0;
 `;
 
 export const Item = styled.div`
-    background: lightgray;
-    text-align: center;
+  background: lightgray;
+  text-align: center;
 `;

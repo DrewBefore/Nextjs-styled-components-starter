@@ -4,9 +4,41 @@ title: Index
 date: 2021-03-19
 ---
 
-# Your Name
+# Nextjs - Styled Components template
 
 ## Try to style the [/about](/about) page using [Styled components](https://styled-components.com/docs/basics)
+
+---
+### Styled components
+Create Styled Components in their own styles.js file example: `/styles/components/about.styles.js`
+```
+// Create a Title component that'll render an <h1> tag with some styles
+export const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+// Create a Wrapper component that'll render a <section> tag with some styles
+export const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+  margin: 1rem 0;
+`;
+```
+### And then use the components in your react like this:
+example: `/pages/about.js`
+```
+import { Title, Wrapper } from '../styles/components/about.styles';
+
+<Wrapper>
+    <Title>Styled components</Title>
+</Wrapper>
+```
+
+---
+
+## Example portfolio page
 
 Hey, I'm a Senior Software Engineer at Company. I enjoy working with Next.js and crafting beautiful front-end experiences.
 
