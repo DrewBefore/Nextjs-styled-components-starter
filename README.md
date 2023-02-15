@@ -17,7 +17,8 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 - From terminal, cd into the project folder, and run `yarn`
 - Then run `yarn dev`
 - Open browser to `http://localhost:3000/`
-
+- Navigate to `http://localhost:3000/about/`
+- Try adding new styled components, modifying existing components, and customizing this page.
 
 ## Optional configuration
 
