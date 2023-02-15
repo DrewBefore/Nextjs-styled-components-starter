@@ -7,14 +7,19 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 - A beautiful theme included out of the box
 - Easily categorize posts with tags
 - Fast, optimized web font loading
+- Initialized with styled components
 
 ## Setup
 - Have node, and npm installed
-- Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) `npm i --global yarn`
-- `yarn dev`
+- Install [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable): `npm i --global yarn`
+- Clone this Repo: `git clone https://github.com/DrewBefore/Nextjs-styled-components-starter.git`
+### Install and run the project
+- From terminal, cd into the project folder, and run `yarn`
+- Then run `yarn dev`
 - Open browser to `http://localhost:3000/`
 
-## Configuration
+
+## Optional configuration
 
 1. Update your name in `theme.config.js` or change the footer.
 1. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
@@ -40,4 +45,7 @@ export default About
 Next.js supports pages with dynamic routes. For example, if you create a file called `pages/posts/[id].js`, then it will be accessible at `posts/1`, `posts/2`, etc.
 
 > To learn more about dynamic routing, check the [Dynamic Routing documentation](/docs/routing/dynamic-routes.md).
+
+### Styled components
+Learn more about [styled components](https://styled-components.com/docs/basics)
 
